@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveControl_Gesture : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class MoveControl_Gesture : MonoBehaviour
     float dirX;
     float maxX, minX;
     public float movementSpeed = 10f;
+    public static int score = 0;
+    public Text scoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +34,20 @@ public class MoveControl_Gesture : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = new Vector2(dirX, 0f);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Dish")
+        {
+            score += 10;
+            scoreText.text = "Score: " + score;
+            Destroy(collision.gameObject);
+
+            if (score % 100 == 0)
+            {
+                Spawn_items.increaseSpeed = true;
+            }
+        }
     }
 }
