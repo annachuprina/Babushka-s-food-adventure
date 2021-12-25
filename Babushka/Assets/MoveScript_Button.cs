@@ -10,14 +10,15 @@ public class MoveScript_Button : MonoBehaviour
     float dirX;
     private float moveSpeed = 20f;
     Rigidbody2D rb;
-
     public static int score = 0;
     public Text scoreText;
+    Animator babushka_animator;
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        babushka_animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,6 +28,7 @@ public class MoveScript_Button : MonoBehaviour
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         pos.x = Mathf.Clamp01(pos.x);
         transform.position = Camera.main.ViewportToWorldPoint(pos);
+        babushka_animator.speed = 5;
     }
 
     void FixedUpdate()

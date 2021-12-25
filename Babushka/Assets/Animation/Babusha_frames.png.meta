@@ -1,0 +1,1224 @@
+fileFormatVersion: 2
+guid: a0f938a23dd4a944180eb0254a6e3628
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1457554459886699863
+    second: Babusha_frames_0
+  - first:
+      213: -8792961273067931858
+    second: Babusha_frames_1
+  - first:
+      213: -941027887799280341
+    second: Babusha_frames_2
+  - first:
+      213: 3374008949140442439
+    second: Babusha_frames_3
+  - first:
+      213: -8329493898410238653
+    second: Babusha_frames_4
+  - first:
+      213: -1835122093730000609
+    second: Babusha_frames_5
+  - first:
+      213: -8825729023082390609
+    second: Babusha_frames_6
+  - first:
+      213: 6553567163222170932
+    second: Babusha_frames_7
+  - first:
+      213: -425744014988412827
+    second: Babusha_frames_8
+  - first:
+      213: -5195481840559994697
+    second: Babusha_frames_9
+  - first:
+      213: 6882168626707445741
+    second: Babusha_frames_10
+  - first:
+      213: -8920814180775540188
+    second: Babusha_frames_11
+  - first:
+      213: 8857249388640889274
+    second: Babusha_frames_12
+  - first:
+      213: -2344406182603742324
+    second: Babusha_frames_13
+  - first:
+      213: 6862085737444009970
+    second: Babusha_frames_14
+  - first:
+      213: 3072653946220054611
+    second: Babusha_frames_15
+  - first:
+      213: -2372906272626451453
+    second: Babusha_frames_16
+  - first:
+      213: 5368256917787550680
+    second: Babusha_frames_17
+  - first:
+      213: 8211924933465472124
+    second: Babusha_frames_18
+  - first:
+      213: -8483154902121392263
+    second: Babusha_frames_19
+  - first:
+      213: 2480516558478287002
+    second: Babusha_frames_20
+  - first:
+      213: -8937730977751721195
+    second: Babusha_frames_21
+  - first:
+      213: -4744954116254826539
+    second: Babusha_frames_22
+  - first:
+      213: 3685923177418807433
+    second: Babusha_frames_23
+  - first:
+      213: 2193740409203618041
+    second: Babusha_frames_24
+  - first:
+      213: -6426904503348538831
+    second: Babusha_frames_25
+  - first:
+      213: -4320941906238108675
+    second: Babusha_frames_26
+  - first:
+      213: 7655398719509171594
+    second: Babusha_frames_27
+  - first:
+      213: 9028561887260925662
+    second: Babusha_frames_28
+  - first:
+      213: 1638461430450354546
+    second: Babusha_frames_29
+  - first:
+      213: -6559123898884951746
+    second: Babusha_frames_30
+  - first:
+      213: 2413087244345820450
+    second: Babusha_frames_31
+  - first:
+      213: 2826975864359865190
+    second: Babusha_frames_32
+  - first:
+      213: -1062325533864891596
+    second: Babusha_frames_33
+  - first:
+      213: 1278851465318344385
+    second: Babusha_frames_34
+  - first:
+      213: 9099314471550973460
+    second: Babusha_frames_35
+  - first:
+      213: 7853506587413565188
+    second: Babusha_frames_36
+  - first:
+      213: 8337253413224301954
+    second: Babusha_frames_37
+  - first:
+      213: 6833399425316123516
+    second: Babusha_frames_38
+  - first:
+      213: -4722556422125438112
+    second: Babusha_frames_39
+  - first:
+      213: 4230235844645669220
+    second: Babusha_frames_40
+  - first:
+      213: 8834553314055311683
+    second: Babusha_frames_41
+  - first:
+      213: -4861838003366402833
+    second: Babusha_frames_42
+  - first:
+      213: -2187841589347365199
+    second: Babusha_frames_43
+  - first:
+      213: 978917236585938696
+    second: Babusha_frames_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Babusha_frames_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 6862
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aabaa1f0f9b5cbe0800000000000000
+      internalID: -1457554459886699863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_1
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 6862
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27f40b2f4029f580800000000000000
+      internalID: -8792961273067931858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_2
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 6862
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ddcff2f1cc0f2f0800000000000000
+      internalID: -941027887799280341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_3
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 6862
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d41825343e2de20800000000000000
+      internalID: 3374008949140442439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_4
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 6862
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d59725e61b76c80800000000000000
+      internalID: -8329493898410238653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 6018
+        width: 399
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1190cbbd265886e0800000000000000
+      internalID: -1835122093730000609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_6
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 6018
+        width: 399
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab9157d636b48580800000000000000
+      internalID: -8825729023082390609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_7
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 6018
+        width: 395
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d9587dc92f2fa50800000000000000
+      internalID: 6553567163222170932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_8
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 6018
+        width: 395
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568fd55f214771af0800000000000000
+      internalID: -425744014988412827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_9
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 6018
+        width: 395
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8cd68fac0f5e7b0800000000000000
+      internalID: -5195481840559994697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 5178
+        width: 395
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de73c3717ef528f50800000000000000
+      internalID: 6882168626707445741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_11
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 5178
+        width: 392
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a4b9f54c6e23480800000000000000
+      internalID: -8920814180775540188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_12
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 5178
+        width: 392
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab96cf824654bea70800000000000000
+      internalID: 8857249388640889274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_13
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 5178
+        width: 392
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83aca48ffef67fd0800000000000000
+      internalID: -2344406182603742324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_14
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 5178
+        width: 388
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7ef9e0f960b3f50800000000000000
+      internalID: 6862085737444009970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_15
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 4335
+        width: 388
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35806260c7244aa20800000000000000
+      internalID: 3072653946220054611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_16
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 4335
+        width: 388
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cddc6315eb11fd0800000000000000
+      internalID: -2372906272626451453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_17
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 4335
+        width: 388
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3a2c77931ef7a40800000000000000
+      internalID: 5368256917787550680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_18
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 4335
+        width: 384
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cf165e73e96f170800000000000000
+      internalID: 8211924933465472124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_19
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 4335
+        width: 384
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977d07cef87c54a80800000000000000
+      internalID: -8483154902121392263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3495
+        width: 384
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90a297eaa09c6220800000000000000
+      internalID: 2480516558478287002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_21
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 3495
+        width: 384
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b9a15a70dc6f380800000000000000
+      internalID: -8937730977751721195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_22
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 3495
+        width: 384
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df7a110f59862eb0800000000000000
+      internalID: -4744954116254826539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_23
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 3495
+        width: 384
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9885d6bd997072330800000000000000
+      internalID: 3685923177418807433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_24
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 3495
+        width: 384
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0700c774bb17e10800000000000000
+      internalID: 2193740409203618041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2651
+        width: 384
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1325d88c76c0fc6a0800000000000000
+      internalID: -6426904503348538831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_26
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 2651
+        width: 384
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb0497ca3ee804c0800000000000000
+      internalID: -4320941906238108675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_27
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 2651
+        width: 384
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d035a43907d3a60800000000000000
+      internalID: 7655398719509171594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_28
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 2651
+        width: 388
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede51da7335eb4d70800000000000000
+      internalID: 9028561887260925662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_29
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 2651
+        width: 388
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279fb247dfbfcb610800000000000000
+      internalID: 1638461430450354546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1811
+        width: 388
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31ff21d09f49f4a0800000000000000
+      internalID: -6559123898884951746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_31
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1811
+        width: 388
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225424b40120d7120800000000000000
+      internalID: 2413087244345820450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_32
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 1811
+        width: 392
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bc5c7129f6b3720800000000000000
+      internalID: 2826975864359865190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_33
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1811
+        width: 392
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43be72e2e8cd141f0800000000000000
+      internalID: -1062325533864891596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_34
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 1811
+        width: 392
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6a9cec1a46fb110800000000000000
+      internalID: 1278851465318344385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_35
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 968
+        width: 395
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416fd583d42474e70800000000000000
+      internalID: 9099314471550973460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_36
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 968
+        width: 395
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fc9ffa1a24dfc60800000000000000
+      internalID: 7853506587413565188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_37
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 968
+        width: 395
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285c5a18ecfd3b370800000000000000
+      internalID: 8337253413224301954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_38
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 968
+        width: 395
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73735a829c15de50800000000000000
+      internalID: 6833399425316123516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_39
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 968
+        width: 399
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b397b84fb167eb0800000000000000
+      internalID: -4722556422125438112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_40
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 128
+        width: 399
+        height: 628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469ca348611d4ba30800000000000000
+      internalID: 4230235844645669220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_41
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 128
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34154818e63aa9a70800000000000000
+      internalID: 8834553314055311683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_42
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 128
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4e9d55818478cb0800000000000000
+      internalID: -4861838003366402833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_43
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 128
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1becf1a8aa933a1e0800000000000000
+      internalID: -2187841589347365199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babusha_frames_44
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 128
+        width: 399
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f36374a00d59d00800000000000000
+      internalID: 978917236585938696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

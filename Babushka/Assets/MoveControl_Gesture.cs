@@ -13,6 +13,7 @@ public class MoveControl_Gesture : MonoBehaviour
     public float movementSpeed = 10f;
     public static int score = 0;
     public Text scoreText;
+    Animator babushka_animator;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class MoveControl_Gesture : MonoBehaviour
         if (transform.position.x > maxX) transform.position = new Vector2(maxX, transform.position.y);
         else if (transform.position.x < minX) transform.position = new Vector2(minX, transform.position.y);
         //transform.position = new Vector2(Mathf.Clamp(transform.position.x, -Screen.width / 2, Screen.width / 2), transform.position.y);
+        //babushka_animator.speed = 10;
     }
     void FixedUpdate()
     {
