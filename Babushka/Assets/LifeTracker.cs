@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,13 @@ public class LifeTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lifeText.text = "Life: " + life;
+        if (life <= 0)
+        {
+            SceneManager.LoadScene("EndScene");
+        }
+        else
+        {
+            lifeText.text = "Life: " + life;
+        }
     }
 }
