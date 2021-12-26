@@ -12,8 +12,9 @@ public class MoveControl_Gesture : MonoBehaviour
     float maxX, minX;
     public float movementSpeed = 10f;
     public static int score = 0;
-    public Text scoreText;
     Animator babushka_animator;
+
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -46,10 +47,20 @@ public class MoveControl_Gesture : MonoBehaviour
             scoreText.text = "Score: " + score;
             Destroy(collision.gameObject);
 
-            if (score % 100 == 0)
-            {
-                Spawn_items.increaseSpeed = true;
-            }
+            /* if (score % 100 == 0)
+             {
+                 Spawn_items.increaseSpeed = true;
+             }*/
+        }
+        else if (collision.tag == "PowerUp")
+        {
+            LifeTracker.life++;
+            Destroy(collision.gameObject);
+        }
+        else if (collision.tag == "PowerDown")
+        {
+            LifeTracker.life--;
+            Destroy(collision.gameObject);
         }
     }
 }

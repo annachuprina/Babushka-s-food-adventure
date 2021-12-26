@@ -5,32 +5,89 @@ using UnityEngine;
 public class Spawn_items : MonoBehaviour
 {
     private float spawnTime = 2;
-    public GameObject dish, power;
+    public GameObject dish, powerUp, powerDown;
     public float maxX = -7;
     public float minX = 7;
     public static bool increaseSpeed = true;
+    private int objectsNumber = 30, powerupNumber = 5, powerdownNumber = 5, objectsCounter;
+    private string[] objectsArray;
+
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("Spawn");
         dish.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.3f;
+        objectsArray = new string[objectsNumber];
+
+        for (int i = 0; i < objectsNumber; i++)
+        {
+            objectsArray[i] = "dish";
+        }
+        for (int i = 0; i < powerupNumber; i++)
+        {
+            int j = Random.Range(0, objectsNumber);
+            objectsArray[j] = "powerup";
+        }
+        for (int i = 0; i < powerdownNumber; i++)
+        {
+            int j = Random.Range(0, objectsNumber);
+            while ((objectsArray[j] == "powerup") || (objectsArray[j] == "powerdown"))
+            {
+                j = Random.Range(0, objectsNumber);
+            }
+            objectsArray[j] = "powerdown";
+        }
+
+        for (int i = 0; i < objectsNumber; i++)
+        {
+            Debug.Log("object type " + i + " " + objectsArray[i]);
+        }
+
+        objectsCounter = 0;
     }
 
     IEnumerator Spawn()
     {
         yield return new WaitForSeconds(spawnTime);
 
-        GameObject dishPrefab = dish;
-        GameObject powerPrefab = power;
+        GameObject go = dish;
 
-        if (Random.Range(0, 100) < 30)
+        if (objectsCounter < objectsNumber)
         {
-            GameObject go = Instantiate(powerPrefab, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.Euler(0, 0, Random.Range(-90F, 90F))) as GameObject;
+            if (objectsArray[objectsCounter] == "dish")
+            {
+                go = Instantiate(dish, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.Euler(0, 0, Random.Range(-90F, 90F))) as GameObject;
+            }
+            else if (objectsArray[objectsCounter] == "powerup")
+            {
+                go = Instantiate(powerUp, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.Euler(0, 0, Random.Range(-90F, 90F))) as GameObject;
+            }
+            else
+            {
+                go = Instantiate(powerDown, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.Euler(0, 0, Random.Range(-90F, 90F))) as GameObject;
+            }
+
+            objectsCounter++;
+        }
+
+        int speedRandomizer = Random.Range(0, 100);
+
+        if (speedRandomizer < 30)
+        {
+            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.2f;
+        }
+        else if ((speedRandomizer > 30) && (speedRandomizer < 70))
+        {
+            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.3f;
+        }
+        else if ((speedRandomizer > 70) && (speedRandomizer < 90))
+        {
+            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.4f;
         }
         else
         {
-            GameObject go = Instantiate(dishPrefab, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.Euler(0, 0, Random.Range(-90F, 90F))) as GameObject;
+            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.5f;
         }
 
         StartCoroutine("Spawn");
@@ -38,10 +95,10 @@ public class Spawn_items : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (increaseSpeed && (MoveControl_Gesture.score != 0) && (MoveControl_Gesture.score % 100 == 0))
+       /* if (increaseSpeed && (MoveControl_Gesture.score != 0) && (MoveControl_Gesture.score % 100 == 0))
         {
             dish.gameObject.GetComponent<Rigidbody2D>().gravityScale += 0.1f;
             increaseSpeed = false;
-        }
+        }*/
     }
 }

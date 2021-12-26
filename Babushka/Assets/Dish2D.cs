@@ -20,6 +20,10 @@ public class Dish2D : MonoBehaviour
 
         if (canBeGrabbed && screen.y < -20)
         {
+            if (gameObject.tag == "Dish")
+            {
+                LifeTracker.life--;
+            }
             Destroy(gameObject);
         }
         else if (!canBeGrabbed && screen.y > -10)

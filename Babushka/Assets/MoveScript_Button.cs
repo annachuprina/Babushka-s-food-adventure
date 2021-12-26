@@ -44,10 +44,20 @@ public class MoveScript_Button : MonoBehaviour
             scoreText.text = "Score: " + score;
             Destroy(collision.gameObject);
 
-            if (score % 100 == 0)
-            {
-                Spawn_items.increaseSpeed = true;
-            }
+            /* if (score % 100 == 0)
+             {
+                 Spawn_items.increaseSpeed = true;
+             }*/
+        }
+        else if (collision.tag == "PowerUp")
+        {
+            LifeTracker.life++;
+            Destroy(collision.gameObject);
+        }
+        else if (collision.tag == "PowerDown")
+        {
+            LifeTracker.life--;
+            Destroy(collision.gameObject);
         }
     }
 
