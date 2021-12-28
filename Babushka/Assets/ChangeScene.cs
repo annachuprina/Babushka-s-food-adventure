@@ -10,10 +10,22 @@ public class ChangeScene : MonoBehaviour
     public void ChangeToButtonControl()
     {
         SceneManager.LoadScene("ButtonControlScene");
+        MoveScript_Button.score = 0;
+        resetStats();
     }
     public void ChangeToGestureControl1()
     {
         SceneManager.LoadScene("GestureControlScene");
+        MoveControl_Gesture.score = 0;
+        resetStats();
+    }
+
+    public void resetStats()
+    {
+        statsTracker.resetScore();
+        statsTracker.resetMissedObjects();
+        statsTracker.resetPowerUp();
+        statsTracker.resetPowerDown();
     }
 
 }

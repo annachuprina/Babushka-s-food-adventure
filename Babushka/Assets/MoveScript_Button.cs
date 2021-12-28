@@ -11,14 +11,17 @@ public class MoveScript_Button : MonoBehaviour
     private float moveSpeed = 20f;
     Rigidbody2D rb;
     public static int score = 0;
-    public Text scoreText;
+    public Text scoreText, timeText;
     Animator babushka_animator;
+
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         babushka_animator = gameObject.GetComponent<Animator>();
+
+        TimeTracker.StartTimer();
     }
 
     // Update is called once per frame
@@ -29,6 +32,8 @@ public class MoveScript_Button : MonoBehaviour
         pos.x = Mathf.Clamp01(pos.x);
         transform.position = Camera.main.ViewportToWorldPoint(pos);
         babushka_animator.speed = 5;
+
+        timeText.text = "time: " + TimeTracker.GetCurrentTime();
     }
 
     void FixedUpdate()
@@ -42,6 +47,7 @@ public class MoveScript_Button : MonoBehaviour
         {
             score += 10;
             scoreText.text = "Score: " + score;
+            statsTracker.setScore(score);
             Destroy(collision.gameObject);
 
             /* if (score % 100 == 0)
@@ -52,11 +58,13 @@ public class MoveScript_Button : MonoBehaviour
         else if (collision.tag == "PowerUp")
         {
             LifeTracker.life++;
+            statsTracker.increasePowerUp();
             Destroy(collision.gameObject);
         }
         else if (collision.tag == "PowerDown")
         {
             LifeTracker.life--;
+            statsTracker.increasePowerDown();
             Destroy(collision.gameObject);
         }
     }

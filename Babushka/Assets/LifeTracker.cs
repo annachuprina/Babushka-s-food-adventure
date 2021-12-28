@@ -19,6 +19,8 @@ public class LifeTracker : MonoBehaviour
     {
         if (life <= 0)
         {
+            TimeTracker.StopTimer();
+            statsTracker.setTime(TimeTracker.GetCurrentTime());
             SceneManager.LoadScene("EndScene");
         }
         else

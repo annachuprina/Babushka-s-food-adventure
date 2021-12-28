@@ -57,15 +57,15 @@ public class Spawn_items : MonoBehaviour
         {
             if (objectsArray[objectsCounter] == "dish")
             {
-                go = Instantiate(dish, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.Euler(0, 0, Random.Range(-90F, 90F))) as GameObject;
+                go = Instantiate(dish, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
             }
             else if (objectsArray[objectsCounter] == "powerup")
             {
-                go = Instantiate(powerUp, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.Euler(0, 0, Random.Range(-90F, 90F))) as GameObject;
+                go = Instantiate(powerUp, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
             }
             else
             {
-                go = Instantiate(powerDown, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.Euler(0, 0, Random.Range(-90F, 90F))) as GameObject;
+                go = Instantiate(powerDown, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
             }
 
             objectsCounter++;

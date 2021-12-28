@@ -5,9 +5,12 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ChangeScene
     - Dish2D
+    - LifeTracker
     - MoveControl_Gesture
     - MoveScript_Button
     - Spawn_items
+    - TimeTracker
+    - endText
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -23,6 +26,14 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -51,11 +62,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -70,17 +85,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2952}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 3204}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3578}
     - Class: 114
-      Script: {instanceID: 3756}
+      Script: {instanceID: 3758}
     - Class: 114
-      Script: {instanceID: 4930}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 5850}
+      Script: {instanceID: 5316}
+    - Class: 114
+      Script: {instanceID: 5554}
+    - Class: 114
+      Script: {instanceID: 5858}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -90,6 +109,57 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/EndScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1500}
+    - Class: 114
+      Script: {instanceID: 1502}
+    - Class: 114
+      Script: {instanceID: 1506}
+    - Class: 114
+      Script: {instanceID: 2776}
+    - Class: 114
+      Script: {instanceID: 2954}
+    - Class: 114
+      Script: {instanceID: 3206}
+    - Class: 114
+      Script: {instanceID: 3578}
+    - Class: 114
+      Script: {instanceID: 4010}
+    - Class: 114
+      Script: {instanceID: 5004}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -114,11 +184,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -133,11 +207,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2952}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 3204}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 3756}
+      Script: {instanceID: 3758}
+    - Class: 114
+      Script: {instanceID: 5316}
+    - Class: 114
+      Script: {instanceID: 5554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -182,13 +260,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2952}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 3204}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3578}
     - Class: 114
-      Script: {instanceID: 5000}
+      Script: {instanceID: 5004}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -394,13 +472,13 @@ ScriptsOnlyBuild:
     className: ProtectCameraFromWallClip
   - hash:
       serializedVersion: 2
-      Hash: 35d3ef85cb5f2d174139fdd0874b6905
+      Hash: 63ffcffbb5718f142d0f70233453dd8f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Spawn_items
   - hash:
       serializedVersion: 2
-      Hash: ac2e0a7c9c6ae9c0b243f5d8bb94a9f5
+      Hash: 5e8e10d105228a2a8cc0643baf6a767a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveControl_Gesture
@@ -512,6 +590,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Water
     className: PlanarReflection
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: statsTracker
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -826,6 +910,12 @@ ScriptsOnlyBuild:
     className: CameraSwitch
   - hash:
       serializedVersion: 2
+      Hash: 5fc6ce04f6103d74c1e77e1484d9bea2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: endText
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1072,7 +1162,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: fd603770689195d8c21e05ad28422d62
+      Hash: 826d1dcbe6d0c3e38d981aa56b7e843c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveScript_Button
@@ -1156,6 +1246,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: ead39c13644c8544dd896af72db044df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LifeTracker
+  - hash:
+      serializedVersion: 2
       Hash: 4bd1cc3c85989d2213a9a8fd9d09e63f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.CrossPlatformInput
@@ -1184,6 +1280,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimeTracker
   - hash:
       serializedVersion: 2
       Hash: c239250f2f7641ce897064c7bd4173b0
@@ -1297,4 +1399,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/ButtonControlScene.unity
   - Assets/Scenes/GestureControlScene.unity
+  - Assets/Scenes/EndScene.unity
   playerPath: D:/Multimodal_Babushka/Babushka/Babushka/BabushkaTest.apk

@@ -23,6 +23,7 @@ public class Dish2D : MonoBehaviour
             if (gameObject.tag == "Dish")
             {
                 LifeTracker.life--;
+                statsTracker.increaseMissedObjects();
             }
             Destroy(gameObject);
         }

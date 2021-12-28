@@ -14,7 +14,7 @@ public class MoveControl_Gesture : MonoBehaviour
     public static int score = 0;
     Animator babushka_animator;
 
-    public Text scoreText;
+    public Text scoreText, timeText;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,8 @@ public class MoveControl_Gesture : MonoBehaviour
         minX = Camera.main.ScreenToWorldPoint(new Vector2(0f, 0f)).x + 0.3f;
         maxX = -minX;
         //screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+
+        TimeTracker.StartTimer();
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class MoveControl_Gesture : MonoBehaviour
         else if (transform.position.x < minX) transform.position = new Vector2(minX, transform.position.y);
         //transform.position = new Vector2(Mathf.Clamp(transform.position.x, -Screen.width / 2, Screen.width / 2), transform.position.y);
         //babushka_animator.speed = 10;
+        timeText.text = "time: " + TimeTracker.GetCurrentTime();
     }
     void FixedUpdate()
     {
@@ -45,6 +48,7 @@ public class MoveControl_Gesture : MonoBehaviour
         {
             score += 10;
             scoreText.text = "Score: " + score;
+            statsTracker.setScore(score);
             Destroy(collision.gameObject);
 
             /* if (score % 100 == 0)
@@ -55,11 +59,13 @@ public class MoveControl_Gesture : MonoBehaviour
         else if (collision.tag == "PowerUp")
         {
             LifeTracker.life++;
+            statsTracker.increasePowerUp();
             Destroy(collision.gameObject);
         }
         else if (collision.tag == "PowerDown")
         {
             LifeTracker.life--;
+            statsTracker.increasePowerDown();
             Destroy(collision.gameObject);
         }
     }
