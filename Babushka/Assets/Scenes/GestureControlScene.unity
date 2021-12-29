@@ -482,7 +482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da46c1e6bd83c1458bcda69e96dd634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dish: {fileID: 681397223807425559, guid: d4771391730dd5645a77a2b0374be5a3, type: 3}
+  borsch: {fileID: 681397223807425559, guid: d4771391730dd5645a77a2b0374be5a3, type: 3}
+  dumplings: {fileID: 3754391476408121161, guid: 81b47d46a85a42949b9510c9efa3be9c, type: 3}
   powerUp: {fileID: 8443676337565101623, guid: fe9f78be463671047aafd59e549509e2, type: 3}
   powerDown: {fileID: 1359791568534797480, guid: 3d5635f1f3eb360438c9f4c9e081c89c, type: 3}
   maxX: -7

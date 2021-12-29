@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawn_items : MonoBehaviour
 {
     private float spawnTime = 2;
-    public GameObject dish, powerUp, powerDown;
+    public GameObject borsch, dumplings, powerUp, powerDown;
     public float maxX = -7;
     public float minX = 7;
     public static bool increaseSpeed = true;
@@ -17,7 +17,8 @@ public class Spawn_items : MonoBehaviour
     void Start()
     {
         StartCoroutine("Spawn");
-        dish.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.3f;
+        borsch.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.3f;
+        dumplings.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.3f;
         objectsArray = new string[objectsNumber];
 
         for (int i = 0; i < objectsNumber; i++)
@@ -51,13 +52,23 @@ public class Spawn_items : MonoBehaviour
     {
         yield return new WaitForSeconds(spawnTime);
 
-        GameObject go = dish;
+        GameObject go = borsch;
 
         if (objectsCounter < objectsNumber)
         {
             if (objectsArray[objectsCounter] == "dish")
             {
-                go = Instantiate(dish, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
+                var random = Random.Range(0, 100);
+
+                if (random < 30)
+                {
+                    go = Instantiate(borsch, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
+                }
+                else
+                {
+                    go = Instantiate(dumplings, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
+                }
+
             }
             else if (objectsArray[objectsCounter] == "powerup")
             {
