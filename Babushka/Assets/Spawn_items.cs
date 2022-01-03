@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawn_items : MonoBehaviour
 {
     private float spawnTime = 2;
-    public GameObject borsch, dumplings, powerUp, powerDown;
+    public GameObject borsch, dumplings, cake, powerUp, powerDown;
     public float maxX = -7;
     public float minX = 7;
     public static bool increaseSpeed = true;
@@ -64,9 +64,13 @@ public class Spawn_items : MonoBehaviour
                 {
                     go = Instantiate(borsch, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
                 }
-                else
+                else if ((random > 30 ) && (random < 70))
                 {
                     go = Instantiate(dumplings, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
+                }
+                else
+                {
+                    go = Instantiate(cake, new Vector3(Random.Range(minX, maxX + 1), transform.position.y, 0f), Quaternion.identity) as GameObject;
                 }
 
             }
