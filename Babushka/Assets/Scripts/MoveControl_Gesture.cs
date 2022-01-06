@@ -22,6 +22,7 @@ public class MoveControl_Gesture : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         minX = Camera.main.ScreenToWorldPoint(new Vector2(0f, 0f)).x + 0.3f;
         maxX = -minX;
+        babushka_animator = gameObject.GetComponent<Animator>();
         //screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
 
         TimeTracker.StartTimer();
@@ -31,10 +32,31 @@ public class MoveControl_Gesture : MonoBehaviour
     void Update()
     {
         dirX = Input.acceleration.x * movementSpeed;
+        //direction = Input.acceleration.x;
         if (transform.position.x > maxX) transform.position = new Vector2(maxX, transform.position.y);
         else if (transform.position.x < minX) transform.position = new Vector2(minX, transform.position.y);
         //transform.position = new Vector2(Mathf.Clamp(transform.position.x, -Screen.width / 2, Screen.width / 2), transform.position.y);
         //babushka_animator.speed = 10;
+        Debug.Log(Input.acceleration.x);
+        if (Input.acceleration.x < 0)
+        {
+            babushka_animator.SetBool("isWalking", true);
+            babushka_animator.SetBool("isRotated", false);
+
+            Debug.Log("left");
+        }
+        else if (Input.acceleration.x > 0)
+        {
+            babushka_animator.SetBool("isWalking", true);
+            babushka_animator.SetBool("isRotated", true);
+            Debug.Log("right");
+        }
+        else if (Input.acceleration.x == 0)
+        {
+            babushka_animator.SetBool("isWalking", false);
+            //babushka_animator.SetBool("isRotated", false);
+            Debug.Log("none");
+        }
         timeText.text = "time: " + TimeTracker.GetCurrentTime();
     }
     void FixedUpdate()

@@ -13,7 +13,6 @@ public class MoveScript_Button : MonoBehaviour
     public Text scoreText, timeText;
     Animator babushka_animator;
 
-
     // Use this for initialization
     void Start()
     {
@@ -30,12 +29,34 @@ public class MoveScript_Button : MonoBehaviour
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         pos.x = Mathf.Clamp01(pos.x);
         transform.position = Camera.main.ViewportToWorldPoint(pos);
-        babushka_animator.speed = 5;
+        babushka_animator.speed = 1;
+        if (dirX == -1)
+        {
+            babushka_animator.SetBool("isWalking", true);
+            babushka_animator.SetBool("isRotated", false);
 
+            Debug.Log("left");
+        }
+        else if (dirX == 1)
+        {
+            babushka_animator.SetBool("isWalking", true);
+            babushka_animator.SetBool("isRotated", true);
+            Debug.Log("right");
+        }
+        else if (dirX == 0)
+        {
+            babushka_animator.SetBool("isWalking", false);
+            //babushka_animator.SetBool("isRotated", false);
+            Debug.Log("none");
+        }
         timeText.text = "time: " + TimeTracker.GetCurrentTime();
     }
 
     void FixedUpdate()
+    {
+        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+    }
+    void LeftButtonClick()
     {
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
     }
