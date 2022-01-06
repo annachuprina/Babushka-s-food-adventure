@@ -10,7 +10,7 @@ public class MoveControl_Gesture : MonoBehaviour
     private Vector2 screenBounds;
     float dirX;
     float maxX, minX;
-    public float movementSpeed = 10f;
+    public float movementSpeed = 30f;
     public static int score = 0;
     Animator babushka_animator;
 

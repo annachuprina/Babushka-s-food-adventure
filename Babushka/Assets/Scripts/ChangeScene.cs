@@ -19,6 +19,12 @@ public class ChangeScene : MonoBehaviour
         MoveControl_Gesture.score = 0;
         resetStats();
     }
+    public void ChangeToStartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+        MoveControl_Gesture.score = 0;
+        resetStats();
+    }
 
     public void resetStats()
     {

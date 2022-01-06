@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MoveScript_Button : MonoBehaviour
 {
     float dirX;
-    private float moveSpeed = 20f;
+    private float moveSpeed = 10f;
     Rigidbody2D rb;
     public static int score = 0;
     public Text scoreText, timeText;
