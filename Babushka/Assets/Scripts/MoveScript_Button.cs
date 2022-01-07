@@ -49,7 +49,7 @@ public class MoveScript_Button : MonoBehaviour
             //babushka_animator.SetBool("isRotated", false);
             Debug.Log("none");
         }
-        timeText.text = "time: " + TimeTracker.GetCurrentTime();
+        timeText.text = "Time: " + TimeTracker.GetCurrentTime();
     }
 
     void FixedUpdate()

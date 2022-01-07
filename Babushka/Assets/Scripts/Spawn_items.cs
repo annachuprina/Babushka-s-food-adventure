@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Spawn_items : MonoBehaviour
 {
@@ -85,6 +87,15 @@ public class Spawn_items : MonoBehaviour
 
             objectsCounter++;
         }
+        else
+        {
+            yield return new WaitForSeconds(6);
+
+            TimeTracker.StopTimer();
+            statsTracker.setTime(TimeTracker.GetCurrentTime());
+            SceneManager.LoadScene("EndScene");
+        }
+
 
         int speedRandomizer = Random.Range(0, 100);
 
