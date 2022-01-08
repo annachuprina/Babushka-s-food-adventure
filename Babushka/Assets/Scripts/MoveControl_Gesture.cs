@@ -13,6 +13,8 @@ public class MoveControl_Gesture : MonoBehaviour
     public float movementSpeed = 30f;
     public static int score = 0;
     Animator babushka_animator;
+    public AudioSource object_collected;
+    public AudioSource object_missed;
 
     public Text scoreText, timeText;
 
@@ -72,6 +74,7 @@ public class MoveControl_Gesture : MonoBehaviour
             scoreText.text = "Score: " + score;
             statsTracker.setScore(score);
             Destroy(collision.gameObject);
+            object_collected.Play();
 
             /* if (score % 100 == 0)
              {
@@ -83,12 +86,14 @@ public class MoveControl_Gesture : MonoBehaviour
             LifeTracker.life++;
             statsTracker.increasePowerUp();
             Destroy(collision.gameObject);
+            //object_collected.Play();
         }
         else if (collision.tag == "PowerDown")
         {
             LifeTracker.life--;
             statsTracker.increasePowerDown();
             Destroy(collision.gameObject);
+           // object_missed.Play();
         }
     }
 }

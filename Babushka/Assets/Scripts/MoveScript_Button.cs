@@ -12,6 +12,8 @@ public class MoveScript_Button : MonoBehaviour
     public static int score = 0;
     public Text scoreText, timeText;
     Animator babushka_animator;
+    public AudioSource object_collected;
+    public AudioSource object_missed;
 
     // Use this for initialization
     void Start()
@@ -69,6 +71,7 @@ public class MoveScript_Button : MonoBehaviour
             scoreText.text = "Score: " + score;
             statsTracker.setScore(score);
             Destroy(collision.gameObject);
+            object_collected.Play();
 
             /* if (score % 100 == 0)
              {
@@ -80,12 +83,14 @@ public class MoveScript_Button : MonoBehaviour
             LifeTracker.life++;
             statsTracker.increasePowerUp();
             Destroy(collision.gameObject);
+            //object_collected.Play();
         }
         else if (collision.tag == "PowerDown")
         {
             LifeTracker.life--;
             statsTracker.increasePowerDown();
             Destroy(collision.gameObject);
+            //object_missed.Play();
         }
     }
 
