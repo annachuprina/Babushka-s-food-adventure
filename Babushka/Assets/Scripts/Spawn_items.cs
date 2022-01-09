@@ -101,19 +101,19 @@ public class Spawn_items : MonoBehaviour
 
         if (speedRandomizer < 30)
         {
-            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.2f;
+            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.5f;
         }
         else if ((speedRandomizer > 30) && (speedRandomizer < 70))
         {
-            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.3f;
+            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.6f;
         }
         else if ((speedRandomizer > 70) && (speedRandomizer < 90))
         {
-            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.4f;
+            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.7f;
         }
         else
         {
-            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.5f;
+            go.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.8f;
         }
 
         StartCoroutine("Spawn");

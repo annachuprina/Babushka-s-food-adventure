@@ -5,7 +5,7 @@ using UnityEngine;
 public class statsTracker : MonoBehaviour
 {
     private static int missedObjects = 0, collectedPowerUp = 0, collectedPowerDown = 0, score = 0;
-    private static string timePlayed;
+    private static string timePlayed, modality = "";
 
     // Start is called before the first frame update
     void Start()
@@ -87,5 +87,26 @@ public class statsTracker : MonoBehaviour
     static public string getTime()
     {
         return timePlayed;
+    }
+
+
+    static public void setGestureModality()
+    {
+        modality = "Gesture Control";
+    }
+
+    static public void setButtonModality()
+    {
+        modality = "Button Control";
+    }
+
+    static public string getModality()
+    {
+        return modality;
+    }
+
+    static public void resetModality()
+    {
+        modality = "";
     }
 }

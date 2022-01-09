@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class endText : MonoBehaviour
 {
-    public Text scoreText, missedObjText, powerUpText, powerDownText, timePlayedText;
+    public Text scoreText, missedObjText, powerUpText, powerDownText, timePlayedText, modalityText;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,7 @@ public class endText : MonoBehaviour
         //powerUpText.text = "Collected Power Ups: " + statsTracker.getPowerUp();
         //powerDownText.text = "Collected Power Downs: " + statsTracker.getPowerDown();
         timePlayedText.text = "Time Played: " + statsTracker.getTime();
+        modalityText.text = "Modality: " + statsTracker.getModality();
     }
 
     // Update is called once per frame

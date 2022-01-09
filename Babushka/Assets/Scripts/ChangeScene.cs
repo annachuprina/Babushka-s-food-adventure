@@ -12,12 +12,14 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("ButtonControlScene");
         MoveScript_Button.score = 0;
         resetStats();
+        statsTracker.setButtonModality();
     }
     public void ChangeToGestureControl1()
     {
         SceneManager.LoadScene("GestureControlScene");
         MoveControl_Gesture.score = 0;
         resetStats();
+        statsTracker.setGestureModality();
     }
     public void ChangeToStartScene()
     {
@@ -32,6 +34,7 @@ public class ChangeScene : MonoBehaviour
         statsTracker.resetMissedObjects();
         statsTracker.resetPowerUp();
         statsTracker.resetPowerDown();
+        statsTracker.resetModality();
     }
 
 }
