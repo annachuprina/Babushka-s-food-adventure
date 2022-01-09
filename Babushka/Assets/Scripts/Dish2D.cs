@@ -6,11 +6,11 @@ public class Dish2D : MonoBehaviour
 {
     private bool canBeGrabbed;
     private Vector3 screen;
-    public AudioSource[] aSource;
+    public AudioSource[] audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        aSource = GameObject.FindGameObjectWithTag("object_missed_sound").GetComponentsInChildren<AudioSource>();
+        audioSource = GameObject.FindGameObjectWithTag("object_missed_sound").GetComponentsInChildren<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,13 +24,19 @@ public class Dish2D : MonoBehaviour
             {
                 LifeTracker.life--;
                 statsTracker.increaseMissedObjects();
-                foreach (AudioSource aS in aSource)
+                foreach (AudioSource audio in audioSource)
                 {
-                    aS.Play();
+                    audio.Play();
                 }
-
             }
-            Destroy(gameObject);
+           else if (gameObject.tag == "PowerUp")
+           {
+                foreach (AudioSource audio in audioSource)
+                {
+                    audio.Play();
+                }
+           }
+           Destroy(gameObject);
         }
 
         else if (!canBeGrabbed && screen.y > -10)

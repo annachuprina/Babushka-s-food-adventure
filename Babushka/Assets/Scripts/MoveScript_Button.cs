@@ -83,7 +83,7 @@ public class MoveScript_Button : MonoBehaviour
             LifeTracker.life++;
             statsTracker.increasePowerUp();
             Destroy(collision.gameObject);
-            //object_collected.Play();
+            object_collected.Play();
         }
         else if (collision.tag == "PowerDown")
         {
