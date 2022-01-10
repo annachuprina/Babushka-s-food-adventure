@@ -30,6 +30,12 @@ public class Spawn_items : MonoBehaviour
         for (int i = 0; i < powerupNumber; i++)
         {
             int j = Random.Range(0, objectsNumber);
+
+            while ((objectsArray[j] == "powerup"))
+            {
+                j = Random.Range(0, objectsNumber);
+            }
+
             objectsArray[j] = "powerup";
         }
         for (int i = 0; i < powerdownNumber; i++)
